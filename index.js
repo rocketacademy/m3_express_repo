@@ -9,7 +9,7 @@ app.get("/", (request, response) => {
 });
 
 // http://localhost:8080/fruit
-app.get("/", (request, response) => {
+app.get("/fruit", (request, response) => {
   response.send(fruit);
 });
 
