@@ -3,6 +3,10 @@ const app = express();
 
 const fruit = ["Apple", "Banana"];
 
+// Setting up middleware
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+
 // http://localhost:8080/
 app.get("/", (request, response) => {
   response.send("Hello World");
